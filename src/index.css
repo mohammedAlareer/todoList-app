@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: Ruwudu;
+    src: url("assets/fonts/Ruwudu-Medium.ttf");
+}
+
+
+@theme{
+    --font-ruwudu: Ruwudu , "sans-serif"
+}
+
+@layer components{
+    .btn.btn-light{
+        @apply bg-gray-500 text-white hover:bg-gray-400 
+    }
+    .btn.btn-danger{ 
+        @apply text-white bg-red-600 shadow-xl hover:bg-red-500
+    }
+    .btn.btn-confirm { 
+        @apply text-white bg-blue-700 shadow-xl hover:bg-blue-600
+    }
+}
